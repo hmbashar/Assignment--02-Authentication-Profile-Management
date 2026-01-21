@@ -1,0 +1,35 @@
+# PHP
+*.log
+*.cache
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+*~
+
+# Environment
+.env
+.env.local
+
+# Composer (if used in future)
+/vendor/
+composer.lock
+
+# Node modules (if used in future)
+node_modules/
+package-lock.json
+
+# Build files
+/dist/
+/build/

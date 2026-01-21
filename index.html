@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 02 - Authentication System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body
+    class="bg-gradient-to-br from-indigo-100 via-purple-100 to-pink-100 min-h-screen flex items-center justify-center p-4">
+    <div class="max-w-4xl w-full">
+        <!-- Header -->
+        <div class="text-center mb-12">
+            <h1 class="text-5xl font-bold text-gray-800 mb-4">Assignment 02</h1>
+            <h2 class="text-2xl text-gray-600 mb-2">Authentication & Profile Management System</h2>
+            <p class="text-gray-500">Built with PHP OOP, MySQL PDO & Tailwind CSS</p>
+        </div>
+
+        <!-- Main Card -->
+        <div class="bg-white rounded-2xl shadow-2xl p-8 md:p-12">
+            <!-- Student Info -->
+            <div class="bg-gradient-to-r from-indigo-50 to-purple-50 rounded-xl p-6 mb-8">
+                <h3 class="text-lg font-semibold text-gray-800 mb-3">Student Information</h3>
+                <div class="space-y-2">
+                    <p class="text-gray-700"><span class="font-medium">Name:</span> Md Abul Bashar</p>
+                    <p class="text-gray-700"><span class="font-medium">Email:</span> hmbashar@gmail.com</p>
+                </div>
+            </div>
+
+            <!-- Features -->
+            <div class="mb-8">
+                <h3 class="text-xl font-bold text-gray-800 mb-4">✨ Features</h3>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="flex items-start space-x-3">
+                        <svg class="w-6 h-6 text-green-500 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg>
+                        <div>
+                            <p class="font-semibold text-gray-800">User Registration</p>
+                            <p class="text-sm text-gray-600">Secure signup with validation</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <svg class="w-6 h-6 text-green-500 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg>
+                        <div>
+                            <p class="font-semibold text-gray-800">Secure Login</p>
+                            <p class="text-sm text-gray-600">Password verification & sessions</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <svg class="w-6 h-6 text-green-500 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg>
+                        <div>
+                            <p class="font-semibold text-gray-800">Profile Management</p>
+                            <p class="text-sm text-gray-600">View & update user info</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <svg class="w-6 h-6 text-green-500 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7">
+                            </path>
+                        </svg>
+                        <div>
+                            <p class="font-semibold text-gray-800">Password Hashing</p>
+                            <p class="text-sm text-gray-600">Bcrypt encryption</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Security Features -->
+            <div class="mb-8">
+                <h3 class="text-xl font-bold text-gray-800 mb-4">🔒 Security Features</h3>
+                <div class="bg-gray-50 rounded-lg p-4">
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-center">
+                            <span class="text-indigo-600 mr-2">•</span>
+                            Password hashing with password_hash()
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-indigo-600 mr-2">•</span>
+                            PDO prepared statements (SQL injection prevention)
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-indigo-600 mr-2">•</span>
+                            Session management & validation
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-indigo-600 mr-2">•</span>
+                            Input validation & sanitization
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="grid md:grid-cols-2 gap-4">
+                <a href="public/register.php"
+                    class="block text-center bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-semibold py-4 px-6 rounded-xl transition duration-200 transform hover:scale-105 shadow-lg">
+                    <div class="text-lg">Register</div>
+                    <div class="text-sm opacity-90">Create a new account</div>
+                </a>
+                <a href="public/login.php"
+                    class="block text-center bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-semibold py-4 px-6 rounded-xl transition duration-200 transform hover:scale-105 shadow-lg">
+                    <div class="text-lg">Login</div>
+                    <div class="text-sm opacity-90">Access your account</div>
+                </a>
+            </div>
+
+            <!-- Documentation Link -->
+            <div class="mt-8 text-center">
+                <p class="text-gray-600 text-sm mb-2">For setup instructions, please read:</p>
+                <a href="README.md" class="text-indigo-600 hover:text-indigo-800 font-medium underline">
+                    README.md
+                </a>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="text-center mt-8">
+            <p class="text-gray-600 text-sm">
+                Built with PHP OOP, MySQL PDO & Tailwind CSS
+            </p>
+            <p class="text-gray-500 text-xs mt-2">
+                © 2026 Assignment 02 - All Rights Reserved
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
