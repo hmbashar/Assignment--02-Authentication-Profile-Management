@@ -122,7 +122,7 @@ To create a test user, run this SQL:
 
 ```sql
 INSERT INTO users (name, email, password) VALUES 
-('Test User', 'test@example.com', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi');
+('Test User', 'test@example.com', '$2y$10$c5/x1cXFWrFZ8jjywnfwvOXcZ0mPmJ7z5SV.T5r5PyiZCiYtHJqfa');
 ```
 
 **Test Credentials:**
